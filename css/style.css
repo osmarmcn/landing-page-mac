@@ -1,0 +1,1139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        *{
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body{
+            
+        }
+       
+
+        .header-info {
+            background-color: #007BFF;
+            color: white;
+            padding: .5rem 1.5rem;
+            display: flex;
+            align-items: center;
+           
+        
+            width: 100%;
+            
+            position: relative;
+        }
+
+        .header-info .logo img{
+            width: 120px;
+            height: 120px;
+           
+        }
+
+        .header-text {
+            font-size: 18px;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            font-size: 4rem;
+            font-weight: 300;
+            position: absolute;
+            top: 30px;
+
+        }
+
+        .close-btn:hover {
+            color: #ccc;
+        }
+
+        .header-ucrania{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            
+            width: 70%;
+           
+            margin: 0 auto;
+        }
+
+        .header-ucrania .content-ucrania p{
+            font-size: 17px;
+
+        }
+.header-menu{
+    padding: 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+.header-menu .nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    gap: 8rem;
+}
+
+.header-menu .nav .logo {
+    display: inline-block; /* Garante que o logo não ocupe 100% da largura da página */
+}
+
+.header-menu .nav .logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto; /* Ajusta a largura para caber o conteúdo */
+}
+
+.nav .logo a img {
+    width: 3rem; /* Ajuste conforme necessário */
+    height: 3rem;
+    transition: transform 0.6s ease-in-out; /* Transição suave para o efeito de rotação */
+}
+
+.nav .logo a:hover img {
+    transform: rotate(360deg); /* Rotaciona a imagem 360 graus quando o mouse está sobre o link */
+}
+
+.store ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav .store li {
+    display: inline-block;
+    
+    position: relative;
+}
+
+.nav .store a {
+    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+
+    color: black;
+
+}
+
+.alca{
+    position: absolute;
+    top: -5px; 
+    left: 5px;
+    width: 15px;
+
+    
+}
+.store a{
+    font-size: 1.5rem;
+}
+
+.store a:hover .alca{
+    top: 5px;
+    left: 3px;
+    transform: rotate(180deg); 
+}
+
+.corpo {
+    display: block;
+    width: 25px; 
+}
+
+.button-menu{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    font-size: 1.8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  
+}
+
+.button-menu img{
+    width: 25px;
+}
+
+.container-geral-home{
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0 auto;
+   
+    gap: 10rem;
+   
+   
+    
+}
+
+.container-home{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+}
+
+.container-home::before{
+    content: url('https://cdn3.macpaw.com/images/paws/cleanmymac-x.svg?id=a7bf95326b4608fb391aa5a911855262');
+    position: absolute;
+    top: -720px;
+    left: -150px;
+    transform: rotate(40deg);
+    z-index: -100;
+}
+
+.container-home::after{
+    content: url('https://cdn3.macpaw.com/images/products/cleanmymac-x/topper-pattern.svg?id=c5d227040a32f6ba348914ec8fd4422e');
+    position: absolute;
+    top: -750px;
+    left: -160px;
+    z-index: -10;
+    
+    width: 1440px;
+  
+    animation: rotation 90s linear infinite reverse;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container-home .content{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding:3rem 2rem 0 .5rem;
+   
+   
+    
+}
+
+.container-home .content .logo-home{
+    width: 100%;
+}
+
+.container-home .content .logo-home img{
+    width: 550px;
+    height: 550px;
+
+}
+
+.container-home .content .content-home-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.container-home .content .content-home-text h2{
+    font-size: 2rem;
+}
+
+.container-home .content .content-home-text h1{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.container-home .content .content-home-text p{
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    text-align: left;
+    width: 80%;
+}
+.container-home .content .content-home-text .content-btn{
+    display: flex;
+    gap: 1.5rem;
+}
+.container-home .content .content-home-text .content-btn a{
+    
+    padding: 1rem ;
+    
+    width: 250px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    text-align: center;
+   
+    
+}
+
+
+.container-home .content .content-home-text .content-btn .green{
+    background: green;
+    color: #fff;
+}
+
+.container-home .content .content-home-text .content-btn .white{
+    color: #000;
+    border: 3px solid lightgray;
+    font-weight: 500;
+
+}
+
+.container-home .links ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.links ul li a  {
+   opacity: .2;
+   transition: .4s ease-in-out;
+}
+
+.links ul li a:hover {
+   opacity: 1;
+}
+/* ------------------------------------------------------------------ */
+
+/* priemira parte - conteudo */
+.conteiner-content-mac {
+    margin-top: 8rem;
+    position: relative;
+    width: 100%;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    -webkit-box-shadow: 0px 20px 40px 0px rgba(145, 109, 153, 0.7);
+    -moz-box-shadow: 0px 20px 40px 0px rgba(145, 109, 153, 0.7);
+    box-shadow: 0px 20px 40px 0px rgba(145, 109, 153, 0.7);
+}
+
+.conteiner-content-mac::before {
+    content: url('https://cdn3.macpaw.com/images/products/cleanmymac-x/intro-bg-main.svg?id=f408d24abfa5d1d3c0a90e8a372da483');
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: -2;
+}
+
+
+.conteiner-content-mac::after{
+    content: url('https://cdn3.macpaw.com/images/products/cleanmymac-x/intro-x-main.svg?id=8eeeece88a09dc6ef9b4279c38683889');
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: -1;
+}
+
+.background-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.background-section::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: #392b44; 
+    z-index: -10; 
+}
+
+
+
+
+
+.conteiner-content-mac .primary{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    padding: 3rem 2rem;
+    gap: 2rem;
+   
+   
+}
+
+
+.conteiner-content-mac .primary .title h3{
+    font-size: 2rem;
+}
+
+.conteiner-content-mac .primary .paragrafo{
+    width: 60%;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+
+
+.conteiner-content-mac .primary .btn-content-mac{
+   
+   
+    margin: 2rem;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+
+
+}
+.conteiner-content-mac .primary .btn-content-mac button{
+    padding: .6rem 3rem;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.conteiner-content-mac .primary .btn-content-mac img{
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    
+}
+
+.conteiner-content-mac .primary .img-mac {
+    position: relative;
+}
+
+.conteiner-content-mac .primary .img-mac .tela {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%; 
+}
+
+.conteiner-content-mac .primary .img-mac .sistema {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 90%;
+}
+
+.conteiner-content-mac .primary .img-mac .page {
+    position: absolute;
+    width: 70%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; 
+}
+/* -------------------------------------------------------------------- */
+
+/* segunda parte - conteudo */
+.conteiner-content-mac .secondary {
+   
+    position: relative;
+  max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    color: #fff;
+}
+
+.conteiner-content-mac .secondary .img-pontos{
+    position: relative;
+    
+}
+
+.conteiner-content-mac .secondary::before{
+    content: url('https://cdn3.macpaw.com/images/products/cleanmymac-x/dots.svg?id=dd197c21bf103696b5bf6c8fde738dbd');
+    position: absolute;
+    top: -300px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.conteiner-content-mac .secondary .img-mac{
+    position: relative;
+}
+
+
+.conteiner-content-mac .secondary .title{
+    font-size: 1.5rem;
+}
+
+.conteiner-content-mac .secondary .title-two{
+    font-size: 2rem;
+}
+
+.conteiner-content-mac .secondary .paragrafo{
+    width: 80%;
+    text-align: center;
+}
+.conteiner-content-mac .secondary .link-limpeza {
+    margin: 2rem 0;
+}
+
+.conteiner-content-mac .secondary .link-limpeza a {
+    color: #6BF;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.conteiner-content-mac .secondary .link-limpeza a img {
+    transform: translateX(0);
+    transition: transform .2s ease-in-out;
+}
+
+
+.conteiner-content-mac .secondary .link-limpeza a:hover img {
+    transform: translateX(5px); 
+}
+
+.conteiner-content-mac .secondary .paragrafo p{
+    letter-spacing: .2em;
+    line-height: 1.5em;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+
+.conteiner-content-mac .secondary .img-mac {
+    position: relative;
+}
+
+
+.conteiner-content-mac .secondary .img-mac .tela-1 {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%; 
+}
+
+.conteiner-content-mac .secondary .img-mac .sistema-1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+}
+
+.conteiner-content-mac .secondary .img-mac .page-1 {
+    position: absolute;
+    width: 50%;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; 
+}
+
+.conteiner-content-mac .secondary .secondary-info{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 3rem;
+    background: #2c1f36a1 ;
+    border-radius: 20px;
+}
+.conteiner-content-mac .secondary .secondary-info .content-1,
+.conteiner-content-mac .secondary .secondary-info .content-2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.conteiner-content-mac .secondary .secondary-info img{
+    width: 56px;
+    height: 56px;
+}
+.conteiner-content-mac .secondary .secondary-info h4{
+    font-size: 1.2rem;
+}
+
+.conteiner-content-mac .secondary .secondary-info p{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+/* ----------------------------------------------------------------- */
+
+/* terceira parte - conteudo */
+.conteiner-content-mac .third {
+   
+    position: relative;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    color: #fff;
+}
+
+.conteiner-content-mac .third .title{
+    font-size: 1.5rem;
+}
+
+.conteiner-content-mac .third .title-two{
+    font-size: 2rem;
+}
+
+.conteiner-content-mac .third .paragrafo{
+    width: 80%;
+    text-align: center;
+}
+
+.conteiner-content-mac .third .paragrafo p{
+    letter-spacing: .2em;
+    line-height: 1.5em;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.conteiner-content-mac .third .link-velocidade {
+    margin: 2rem 0;
+}
+
+.conteiner-content-mac .third .link-velocidade a {
+    color: #6BF;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.conteiner-content-mac .third .link-velocidade a img {
+    transform: translateX(0);
+    transition: transform .2s ease-in-out;
+}
+
+.conteiner-content-mac .third .link-velocidade a:hover img {
+    transform: translateX(5px); 
+}
+
+.conteiner-content-mac .third .img-mac {
+    position: relative;
+    width: 100%;
+   
+}
+
+.conteiner-content-mac .third .img-mac .tela-1 {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%; 
+}
+
+.conteiner-content-mac .third .img-mac .sistema-1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+}
+
+.conteiner-content-mac .third .img-mac .page-1 {
+    position: absolute;
+    width: 50%;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; 
+}
+/* --------------------------------------------------------- */
+
+
+.conteiner-content-mac .fourth {
+   
+    position: relative;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    color: #fff;
+}
+
+.conteiner-content-mac .fourth .title{
+    font-size: 1.5rem;
+}
+
+.conteiner-content-mac .fourth .title-two{
+    font-size: 2rem;
+}
+
+.conteiner-content-mac .fourth .paragrafo{
+    width: 80%;
+    text-align: center;
+}
+
+.conteiner-content-mac .fourth .paragrafo p{
+    letter-spacing: .2em;
+    line-height: 1.5em;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.conteiner-content-mac .fourth .link-velocidade {
+    margin: 2rem 0;
+}
+
+.conteiner-content-mac .fourth .link-protecao a {
+    color: #6BF;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.conteiner-content-mac .fourth .link-protecao a img {
+    transform: translateX(0);
+    transition: transform .2s ease-in-out;
+}
+
+.conteiner-content-mac .fourth .link-protecao a:hover img {
+    transform: translateX(5px); 
+}
+
+.conteiner-content-mac .fourth .box-protecao{
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    gap: 3rem;
+   
+}
+
+.conteiner-content-mac .fourth .box-protecao .content-box{
+    background: #2D2038;
+    border-radius: 20px;
+    padding: 2rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+/* ----------------------------------------------------------------------- */
+
+/* quinta parte - conteudo */
+
+.conteiner-content-mac .fifth {
+   
+    position: relative;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    color: #fff;
+}
+
+.conteiner-content-mac .fifth .title{
+    font-size: 1.5rem;
+}
+
+.conteiner-content-mac .fifth .title-two{
+    font-size: 2rem;
+}
+
+.conteiner-content-mac .fifth .paragrafo{
+    width: 80%;
+    text-align: center;
+}
+
+.conteiner-content-mac .fifth .paragrafo p{
+    letter-spacing: .2em;
+    line-height: 1.5em;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.conteiner-content-mac .fifth .link-velocidade {
+    margin: 2rem 0;
+}
+
+.conteiner-content-mac .fifth .link-velocidade a {
+    color: #6BF;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.conteiner-content-mac .fifth .link-velocidade a img {
+    transform: translateX(0);
+    transition: transform .2s ease-in-out;
+}
+
+.conteiner-content-mac .fifth .link-velocidade a:hover img {
+    transform: translateX(5px); 
+}
+
+.conteiner-content-mac .fifth .img-mac {
+    position: relative;
+    width: 100%;
+   
+}
+
+.conteiner-content-mac .fifth .img-mac .tela-1 {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%; 
+}
+
+.conteiner-content-mac .fifth .img-mac .sistema-1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+}
+
+.conteiner-content-mac .fifth .img-mac .page-1 {
+    position: absolute;
+    width: 50%;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; 
+}
+/* ------------------------------------------------------------------- */
+
+
+.conteiner-content-mac .sixth {
+   
+    position: relative;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 2rem;
+    gap: 2rem;
+    color: #fff;
+}
+.conteiner-content-mac .sixth .title{
+    font-size: 1.5rem;
+}
+
+.conteiner-content-mac .sixth .title-two{
+    font-size: 2rem;
+}
+
+.conteiner-content-mac .sixth .paragrafo{
+    width: 80%;
+    text-align: center;
+}
+
+.conteiner-content-mac .sixth .paragrafo p{
+    letter-spacing: .2em;
+    margin: 1rem 0;
+    font-size: 14px;
+    line-height: 24.5px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.32);
+}
+
+.conteiner-content-mac .sixth .box-protecao{
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 1rem;
+    opacity: 0.7;
+   
+}
+
+.conteiner-content-mac .sixth .box-protecao .content-box{
+    width: 100%;
+    height: 300px;
+    background: #2D2038;
+    border-radius: 20px;
+    padding: 2rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.conteiner-content-mac .sixth .box-protecao .content-box h4{
+    font-size: 4rem;
+}
+.conteiner-content-mac .sixth .box-protecao .content-box p{
+    font-size: 1rem;
+    
+}
+.conteiner-content-mac .sixth .box-protecao .content-box h4:nth-child(1) {
+    color: #F3659F; 
+}
+
+.conteiner-content-mac .sixth .box-protecao .content-box h4:nth-child(2) {
+    color: #A965F3; 
+}
+
+.conteiner-content-mac .sixth .box-protecao .content-box h4:nth-child(3) {
+    color: #53D9FF; 
+}
+.conteiner-content-mac .sixth .img-final {
+    position: relative;
+    width: 100%;
+    height: auto; /* Defina uma altura adequada */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    margin-top: 3rem;
+}
+
+.conteiner-content-mac .sixth .img-final::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn3-imgix.macpaw.com/images/products/cleanmymac-x/city.jpg?auto=format&dpr=1&fm=png&ixlib=php-3.3.1&q=60&w=1360');
+    opacity: 0.7;
+    background-size: cover; 
+    background-position: center; 
+    z-index: -1; 
+}
+
+.conteiner-content-mac .sixth .img-final h2{
+    color:  #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 140% */
+}
+
+.conteiner-content-mac .sixth .img-final p{
+    color: #FFF;
+    width: 70%;
+}
+
+.conteiner-content-mac .sixth .img-final .img-mac {
+    position: relative;
+    width: 100%;
+   
+}
+
+.conteiner-content-mac .sixth .img-final .img-mac .tela-1 {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%; 
+}
+
+.conteiner-content-mac .sixth .img-final .img-mac .sistema-1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+}
+
+.conteiner-content-mac .sixth .img-final .img-mac .page-1 {
+    position: absolute;
+    width: 50%;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; 
+}
+/* ------------------------------------------------------------ */
+/* paises */
+.section-final{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-final .countries{
+    width: 100%;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  
+}
+
+.countries h3{
+
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.section-final .countries .countries-box{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    flex-wrap: wrap;
+    
+}
+
+.section-final .countries .countries-box .countrie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    position: relative;
+   
+}
+
+.section-final .countries .countries-box .countrie span{
+    width: 100px;
+    
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top: 88%;
+}
+
+.section-final .countries .countries-box .countrie img{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+     border-radius: 10px;
+}
+/* --------------------------------------------------------- */
+
+/* oraganização */
+.organizacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem 0;
+
+}
+
+.organizacao .title h3{
+    font-size: 24px;
+}
+.organizacao .paragrafo{
+    text-align: center;
+    width: 90%;
+}
+.organizacao .paragrafo p{
+    width: 100%;
+}
+
+.organizacao .box-organizacao{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.organizacao .box-organizacao .content-box{
+    border: 3px solid red;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 2px solid  rgba(0, 0, 0, 0.04);
+    transition: .5s ease-in-out;
+}
+
+.organizacao .box-organizacao .content-box:hover{
+    border: 2px solid  rgba(0, 0, 0, 0.752)
+}
+
+.organizacao .box-organizacao .content-box .link-organizacao span{
+    color: #6BF;
+    display: flex;
+    align-items: center;
+    
+    gap: .3rem;
+}
+
+.organizacao .box-organizacao .content-box:hover .link-organizacao span img {
+    transform: translateX(5px);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
