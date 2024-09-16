@@ -23,6 +23,20 @@
        </div>
     </div>
 
+    <div class="header-positon">
+        <div class="content">
+            <div class="img-content">
+                <img src="./assets/logo/logo-position.svg" alt="">
+                <span>CleanMyMac X</span>
+            </div>
+
+            <div class="btn">
+                <button class="green">Obter teste</button>
+                <button class="white">Comprar agora</button>
+            </div>
+        </div>
+    </div>
+
     <header class="header-menu">
         <nav class="nav">
             <div class="logo">
@@ -43,8 +57,12 @@
                     </li>
 
                     <li>
-                        <button class="button-menu">
-                            <img src="./assets/menu.svg" alt="">
+                        <button class="button-menu" id="menuButton">
+                            <div class="img">
+                                <div class="bar bar1"></div>
+                                <div class="bar bar2"></div>
+                                <div class="bar bar3"></div>
+                            </div>
                             menu
                         </button>
                     </li>
@@ -55,13 +73,13 @@
         
     </header>
 
-    <section class="container-geral-home">
-        <section class="container-home">
+    <section class="container-geral-introduction">
+        <section class="container-introduction">
             <div class="content">
-                <div class="logo-home">
+                <div class="logo-introduction">
                     <img src="./assets/Picture → cleanmymac-x4x.webp.svg" alt="">
                 </div>
-                <div class="content-home-text">
+                <div class="content-introduction-text">
                     <h2>CleanMyMac X</h2>
                     <h1>Seu Mac. <br>
                         Como novo.</h1>
@@ -221,7 +239,7 @@
                             <div class="content-box">
                                 <img src="./assets/malware-cleaner.png.svg" alt="">
                                 <h4>Remoção de malware</h4>
-                                <p>RRealize um exame abrangente de todos os tipos de vulnerabilidade no Mac.</p>
+                                <p>Realize um exame abrangente de todos os tipos de vulnerabilidade no Mac.</p>
                             </div>
                     
                     </div>
@@ -281,21 +299,16 @@
                     <div class="paragrafo">
                         <p>* Teste feito em um MacBook Pro (15 polegadas, 2016) com 512 GB de armazenamento.</p>
                     </div>
-                    <!-- <div class="link-velocidade">
-                        <a href="" class="l">Saiba mais sobre como gerenciar apps 
-                        <img src="assets/arrow_right.svg" alt="">
-                        </a>
-                    </div>
-                        -->
+                   
                     <div class="img-final">
-                    <h2>Curta a vida e deixe a limpeza conosco</h2>
-                    <p>O CleanMyMac X tem milhares de horas de experiência, horas essas que você não precisa perder limpando. Por exemplo, a Análise Inteligente faz três trabalhos ao mesmo tempo: ela limpa, protege e acelera o Mac. Experimente o CleanMyMac X e pergunte-se como você viveu sem ele por tanto tempo.</p>
-                        <div class="img-mac">
-                            <img src="./assets/Picture → macbookpro.png.svg" alt="" class="tela-1">
-                            <img src="./assets/Picture → bg_macbook.png.svg" alt="" class="sistema-1">
-                            <img src="./assets/Picture → en_1614263360.png.svg" alt="" class="page-1">
-                    
-                    </div>
+                        <h2>Curta a vida e deixe a limpeza conosco</h2>
+                        <p>O CleanMyMac X tem milhares de horas de experiência, horas essas que você não precisa perder limpando. Por exemplo, a Análise Inteligente faz três trabalhos ao mesmo tempo: ela limpa, protege e acelera o Mac. Experimente o CleanMyMac X e pergunte-se como você viveu sem ele por tanto tempo.</p>
+                            <div class="img-mac">
+                                <img src="./assets/Picture → macbookpro.png.svg" alt="" class="tela-1">
+                                <img src="./assets/Picture → bg_macbook.png.svg" alt="" class="sistema-1">
+                                <img src="./assets/Picture → en_1614263360.png.svg" alt="" class="page-1">
+                        
+                            </div>
                     </div>
                     
 
@@ -568,108 +581,38 @@
             <div class="footer-box">
                 <h4>Siga-nos</h4>
                 <div class="sociais">
-                    <a href="">Vendas Corporativas</a>
-                    <a href="">Desconto de Estudante</a>
-                    <a href="">CleanMyMac X para Empresas</a>
-                    <a href="">CleanMyMac X para Educação</a>
+                    <a href="" class="facebook"><img src="./assets/sociais/facebook.svg" alt="Facebook"></a>
+                    <a href="" class="instagram"><img src="./assets/sociais/instagram.svg" alt="Instagram"></a>
+                    <a href="" class="twitter"><img src="./assets/sociais/x.svg" alt="Twitter"></a>
+                    <a href="" class="youtube"><img src="./assets/sociais/youtube.svg" alt="YouTube"></a>
                 </div>
                 <div class="idioma">
                     <h4>Idioma</h4>
                     <select name="" id="">
-                        <option value="">Português</option>
-                        <option value="">Inglês</option>
-
-
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="es">Español</option>
+                        <option value="de">Deutsch</option>
+                        <option value="it">Italiano</option>
+                        <option value="uk">Українська</option>
+                        <option value="ja">日本語</option>
+                        <option value="zh">中文</option>
+                        <option value="nl">Nederlands</option>
                     </select>
                 </div>
                
             </div>
         </div>
+        <div class="copyright">
+            
+            <p><img src="./assets/logo/macpaw_logo_paw.svg" alt=""> Copyright © 2024 MacPaw Way Ltd.</p>
+        </div>
     </footer>
     
 
    
-
-    <script>
-        document.getElementById('closeBtn').addEventListener('click', function() {
-        document.getElementById('header-info').style.display = 'none';
-
-
-        });
-
-        const data = [
-    {
-        id: 1,
-        class: "comentario-1",
-        texto: "Uso semanalmente o CleanMyMac X no meu Mac mini com M2 Pro para garantir que tudo funcione bem, ficar de olho em softwares duvidosos e recuperar o espaço purgável em disco. Eu sei que poderia fazer algumas dessas coisas manualmente no Terminal, mas o processo é muito mais rápido via software e poupa tempo. O CleanMyMac X também é útil para desinstalar e atualizar softwares.",
-        autor: "Mark Sparrow"
-    },
-    {
-        id: 2,
-        class: "comentario-2",
-        texto: "Se você já passou pela situação de ter um Mac quase cheio, confira o CleanMyMac X. Há anos, ele tem sido uma excelente forma de recuperar espaço com pouquíssimo esforço.",
-        autor: "John Voorhees"
-    },
-    {
-        id: 3,
-        class: "comentario-3",
-        texto: "Seu Mac está em forma? Essa tarefa não precisa ser difícil. O CleanMyMac oferece todas as ferramentas que você precisa para garantir uma máquina sempre veloz e segura.",
-        autor: "Killian Bell"
-    },
-    {
-        id: 4,
-        class: "comentario-4",
-        texto: "O CleanMyMac X ajuda a remover arquivos desnecessários e identifica aquilo que está deixando o computador lento.",
-        autor: "Romain Dillet"
-    },
-    {
-        id: 5,
-        class: "comentario-5",
-        texto: "Uso o CleanMyMac há muitos anos e continuo me impressionando a cada atualização. Sem dúvida, a versão deste ano é a melhor já feita. Altamente recomendado.",
-        autor: "Bryan M. Wolfe"
-    }
-];
-
-// Função para criar e exibir o comentário correspondente ao botão clicado
-function criar(id){
-    const container = document.getElementById('comentarios');
-    container.innerHTML = ''; // Limpa o conteúdo anterior
-
-    // Busca o item correspondente ao ID clicado
-    const comentario = data.find(item => item.id === id);
-    
-    // Cria o comentário apenas para o ID correspondente
-    if (comentario) {
-        container.innerHTML = `
-            <div class="comentario ${comentario.class}">
-                <p class="p-1">
-                    ${comentario.texto}
-                </p>
-                <span>${comentario.autor}</span>
-            </div>
-        `;
-    }
-
-    // Gerenciar a classe 'active' nos botões
-    const buttons = document.querySelectorAll('.links button');
-    buttons.forEach(button => button.classList.remove('active')); // Remove 'active' de todos
-    document.getElementById(`btn-${id}`).classList.add('active'); // Adiciona 'active' ao botão clicado
-}
-
-// Inicializa com o comentário 1 e o botão correspondente ativo
-window.onload = () => {
-    criar(1);
-};
-
-// Adiciona os eventos de clique para cada botão
-document.getElementById('btn-1').addEventListener('click', () => criar(1));
-document.getElementById('btn-2').addEventListener('click', () => criar(2));
-document.getElementById('btn-3').addEventListener('click', () => criar(3));
-document.getElementById('btn-4').addEventListener('click', () => criar(4));
-document.getElementById('btn-5').addEventListener('click', () => criar(5));
-
-
-
-    </script>
+    <script src="./js/script.js"></script>
+   
 </body>
 </html>
